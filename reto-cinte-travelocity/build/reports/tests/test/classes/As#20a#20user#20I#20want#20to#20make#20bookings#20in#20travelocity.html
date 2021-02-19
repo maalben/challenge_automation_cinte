@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class As a user I want to make bookings in travelocity</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class As a user I want to make bookings in travelocity</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; As a user I want to make bookings in travelocity</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">4</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3m41.79s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">42%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Reservation hotel without specify place"></a>
+<h3 class="failures">Reservation hotel without specify place</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs$accessor$3aNwpYoT(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.tasks.CompleteDataReservationHotelWithoutToSpecifyPlace.performAs(CompleteDataReservationHotelWithoutToSpecifyPlace.java:27)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iMakeTheHotelReservationOnThePageWithoutSpecifyPlace(ReservationsDefinitions.java:73)
+	at ✽.I make the hotel reservation on the page without specify place(src/test/resources/features/reservations.feature:36)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Send text message for download App success"></a>
+<h3 class="failures">Send text message for download App success</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:45)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Send text message with phone number already used"></a>
+<h3 class="failures">Send text message with phone number already used</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:54)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Send text message without specify phone number"></a>
+<h3 class="failures">Send text message without specify phone number</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.PressButton.performAs(PressButton.java:13)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs$accessor$wVV2HgBp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iPressButtonToGetTheApp(ReservationsDefinitions.java:96)
+	at ✽.I press button to get the app(src/test/resources/features/reservations.feature:63)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Reservation date hotel with more 28 days</td>
+<td class="success">16.395s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Reservation hotel without specify place</td>
+<td class="failures">15.698s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Search hotel booking in travelocity not exists</td>
+<td class="success">1m29.91s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Send text message for download App success</td>
+<td class="failures">4.645s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Send text message with phone number already used</td>
+<td class="failures">12.013s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Send text message without specify phone number</td>
+<td class="failures">6.290s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Successful hotel booking in travelocity</td>
+<td class="success">1m16.84s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>    Given I wants to access platform the travelocity          # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I make the hotel reservation on the page             # ReservationsDefinitions.iMakeTheHotelReservationOnThePage(HotelReservationModels&gt;)
+    Then I verify that the hotel exists &quot;Apartamento Calle 8&quot; # ReservationsDefinitions.iVerifyThatTheHotelExists(String)
+    Given I wants to access platform the travelocity             # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I make the hotel reservation on the page                # ReservationsDefinitions.iMakeTheHotelReservationOnThePage(HotelReservationModels&gt;)
+    Then I verify that the hotel no exists &quot;Apartamento Calle 9&quot; # ReservationsDefinitions.iVerifyThatTheHotelNoExists(String)
+    Given I wants to access platform the travelocity                                            # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I make the hotel reservation on the page                                               # ReservationsDefinitions.iMakeTheHotelReservationOnThePage(HotelReservationModels&gt;)
+    Then I verify that the message error &quot;Dates must be no more than 28 days apart&quot; is expected # ReservationsDefinitions.iVerifyThatTheMessageErrorIsExpected(String)
+    Given I wants to access platform the travelocity                                                 # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I make the hotel reservation on the page without specify place                              # ReservationsDefinitions.iMakeTheHotelReservationOnThePageWithoutSpecifyPlace(HotelReservationModels&gt;)
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs$accessor$3aNwpYoT(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.tasks.CompleteDataReservationHotelWithoutToSpecifyPlace.performAs(CompleteDataReservationHotelWithoutToSpecifyPlace.java:27)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iMakeTheHotelReservationOnThePageWithoutSpecifyPlace(ReservationsDefinitions.java:73)
+	at ✽.I make the hotel reservation on the page without specify place(src/test/resources/features/reservations.feature:36)
+
+    Then I verify that the message error expected in the text place is &quot;Please select a destination&quot; # ReservationsDefinitions.iVerifyThatTheMessageErrorExpectedInTheTextPlaceIs(String)
+    Given I wants to access platform the travelocity                                                       # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I fill in the data to download the app                                                            # ReservationsDefinitions.iFillInTheDataToDownloadTheApp(HotelReservationModels&gt;)
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:45)
+
+    Then I verify that the message &quot;We’ve sent you a text message with a link to download the app.&quot; appear # ReservationsDefinitions.iVerifyThatTheMessageAppear(String)
+    Given I wants to access platform the travelocity                                                                                                                                                           # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I fill in the data to download the app                                                                                                                                                                # ReservationsDefinitions.iFillInTheDataToDownloadTheApp(HotelReservationModels&gt;)
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:54)
+
+    Then I verify that the text &quot;We’ve sent you a text message with a link to download the app. Please check the phone number you provided, or try again by entering a different phone number.&quot; is as expected # ReservationsDefinitions.iVerifyThatTheTextIsAsExpected(String)
+    Given I wants to access platform the travelocity                   # ReservationsDefinitions.iWantsToAccessPlatformTheTravelocity()
+    When I press button to get the app                                 # ReservationsDefinitions.iPressButtonToGetTheApp()
+      org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.PressButton.performAs(PressButton.java:13)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs$accessor$wVV2HgBp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iPressButtonToGetTheApp(ReservationsDefinitions.java:96)
+	at ✽.I press button to get the app(src/test/resources/features/reservations.feature:63)
+
+    Then I should see the message &quot;Please enter a valid phone number.&quot; # ReservationsDefinitions.iShouldSeeTheMessage(String)
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO  -    * Given I wants to access platform the travelocity
+[Test worker] INFO  -      * User enter
+[Test worker] INFO  -        * user opens the Reservations travelocity page
+Feb 19, 2021 12:43:08 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 29726
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713391.852][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:43:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  -    * When I make the hotel reservation on the page
+| destination | initialReservationDate | finalReservationDate | adults | children | ageChild |
+| Poblado medellín | 2021-02-20 | 2021-02-25 | 5 | 1 | 5 |
+[Test worker] INFO  -      * user clicks on Button hotels
+[Test worker] INFO  -      * user clicks on Text going to
+[Test worker] INFO  -      * user enters 'Poblado medellín' into Text destination
+[Test worker] INFO  -      * user clicks on First option search
+[Test worker] INFO  -      * user clicks on Text date check in
+[Test worker] INFO  -      * user clicks on Button previous month
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text date check out
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text traveler
+[Test worker] INFO  -      * user clicks on Button plus adult travelers
+[Test worker] INFO  -      * user clicks on Button plus adult travelers
+[Test worker] INFO  -      * user clicks on Button plus adult travelers
+[Test worker] INFO  -      * user clicks on Button plus children travelers
+[Test worker] INFO  -      * user clicks on Select list age child
+[Test worker] INFO  -      * user select 5 on Select list age child
+[Test worker] INFO  -      * user clicks on Button confirm travelers
+[Test worker] INFO  -      * user clicks on Button search
+[Test worker] INFO  -    * Then I verify that the hotel exists &quot;Apartamento Calle 8&quot;
+[Test worker] INFO  -      * Then the list hotels should be (true)
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  - ?[92m
+___ ____ ____ ___    ___  ____ ____ ____ ____ ___  
+ |  |___ [__   |     |__] |__| [__  [__  |___ |  \ 
+ |  |___ ___]  |     |    |  | ___] ___] |___ |__/ 
+-------------------------------------------------
+Successful hotel booking in travelocity
+----------------------------------------------------?[0m
+[Test worker] INFO  -    * Given I wants to access platform the travelocity
+[Test worker] INFO  -      * User enter
+[Test worker] INFO  -        * user opens the Reservations travelocity page
+Feb 19, 2021 12:44:24 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 25348
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713466.677][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:44:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  -    * When I make the hotel reservation on the page
+| destination | initialReservationDate | finalReservationDate | adults | children | ageChild |
+| Poblado medellín | 2021-02-25 | 2021-02-28 | 1 | 1 | 3 |
+[Test worker] INFO  -      * user clicks on Button hotels
+[Test worker] INFO  -      * user clicks on Text going to
+[Test worker] INFO  -      * user enters 'Poblado medellín' into Text destination
+[Test worker] INFO  -      * user clicks on First option search
+[Test worker] INFO  -      * user clicks on Text date check in
+[Test worker] INFO  -      * user clicks on Button previous month
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text date check out
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text traveler
+[Test worker] INFO  -      * user clicks on Button minus adult travelers
+[Test worker] INFO  -      * user clicks on Button plus children travelers
+[Test worker] INFO  -      * user clicks on Select list age child
+[Test worker] INFO  -      * user select 3 on Select list age child
+[Test worker] INFO  -      * user clicks on Button confirm travelers
+[Test worker] INFO  -      * user clicks on Button search
+[Test worker] INFO  -    * Then I verify that the hotel no exists &quot;Apartamento Calle 9&quot;
+[Test worker] INFO  -      * Then the list hotels should be (false)
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  -        * user clicks on Button show more
+[Test worker] INFO  -        * User wait
+[Test worker] INFO  - ?[92m
+___ ____ ____ ___    ___  ____ ____ ____ ____ ___  
+ |  |___ [__   |     |__] |__| [__  [__  |___ |  \ 
+ |  |___ ___]  |     |    |  | ___] ___] |___ |__/ 
+-------------------------------------------------
+Search hotel booking in travelocity not exists
+----------------------------------------------------?[0m
+[Test worker] INFO  -    * Given I wants to access platform the travelocity
+[Test worker] INFO  -      * User enter
+[Test worker] INFO  -        * user opens the Reservations travelocity page
+Feb 19, 2021 12:45:54 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 20272
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713556.471][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:45:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  -    * When I make the hotel reservation on the page
+| destination | initialReservationDate | finalReservationDate | adults | children | ageChild |
+| Poblado medellín | 2021-03-01 | 2021-03-30 | 1 | 1 | 3 |
+[Test worker] INFO  -      * user clicks on Button hotels
+[Test worker] INFO  -      * user clicks on Text going to
+[Test worker] INFO  -      * user enters 'Poblado medellín' into Text destination
+[Test worker] INFO  -      * user clicks on First option search
+[Test worker] INFO  -      * user clicks on Text date check in
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text date check out
+[Test worker] INFO  -      * user clicks on Button initial day
+[Test worker] INFO  -      * user clicks on Button confirm date
+[Test worker] INFO  -      * user clicks on Text traveler
+[Test worker] INFO  -      * user clicks on Button minus adult travelers
+[Test worker] INFO  -      * user clicks on Button plus children travelers
+[Test worker] INFO  -      * user clicks on Select list age child
+[Test worker] INFO  -      * user select 3 on Select list age child
+[Test worker] INFO  -      * user clicks on Button confirm travelers
+[Test worker] INFO  -      * user clicks on Button search
+[Test worker] INFO  -    * Then I verify that the message error &quot;Dates must be no more than 28 days apart&quot; is expected
+[Test worker] INFO  -      * Then the message
+[Test worker] INFO  - ?[92m
+___ ____ ____ ___    ___  ____ ____ ____ ____ ___  
+ |  |___ [__   |     |__] |__| [__  [__  |___ |  \ 
+ |  |___ ___]  |     |    |  | ___] ___] |___ |__/ 
+-------------------------------------------------
+Reservation date hotel with more 28 days
+----------------------------------------------------?[0m
+[Test worker] INFO  -    * Given I wants to access platform the travelocity
+[Test worker] INFO  -      * User enter
+[Test worker] INFO  -        * user opens the Reservations travelocity page
+Feb 19, 2021 12:46:11 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 40976
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713572.731][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:46:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1613713586.334][SEVERE]: Unable to receive message from renderer
+[Test worker] INFO  -    * When I make the hotel reservation on the page without specify place
+| initialReservationDate | finalReservationDate | adults | children | ageChild |
+| 2021-03-01 | 2021-03-30 | 1 | 1 | 3 |
+[Test worker] INFO  -      * user clicks on Button hotels
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}?[0m
+[Test worker] INFO  -        * Then I verify that the message error expected in the text place is &quot;Please select a destination&quot;
+[Test worker] INFO  - ?[33m      -&gt; STEP IGNORED?[0m
+[Test worker] ERROR  - ?[91m
+___ ____ ____ ___    ____ ____ ____ ____ ____ 
+ |  |___ [__   |     |___ |__/ |__/ |  | |__/ 
+ |  |___ ___]  |     |___ |  \ |  \ |__| |  \ 
+---------------------------------------------
+Reservation hotel without specify place
+-----------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: user clicks on Button hotels?[0m
+[Test worker] ERROR  - ?[91m    no such window: target window already closed?[0m
+[Test worker] INFO  -        * Given I wants to access platform the travelocity
+[Test worker] INFO  -          * User enter
+[Test worker] INFO  -            * user opens the Reservations travelocity page
+Feb 19, 2021 12:46:26 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 9901
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713588.826][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:46:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  -        * When I fill in the data to download the app
+| countryCode | phoneNumber |
+| Colombia +57 | 3000000003 |
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  -          * Then I verify that the message &quot;We’ve sent you a text message with a link to download the app.&quot; appear
+[Test worker] INFO  - ?[33m      -&gt; STEP IGNORED?[0m
+[Test worker] ERROR  - ?[91m
+___ ____ ____ ___    ____ ____ ____ ____ ____ 
+ |  |___ [__   |     |___ |__/ |__/ |  | |__/ 
+ |  |___ ___]  |     |___ |  \ |  \ |__| |  \ 
+---------------------------------------------
+Send text message for download App success
+-----------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: When I fill in the data to download the app | countryCode | phoneNumber | | Colombia +57 | 3000000003 |?[0m
+[Test worker] ERROR  - ?[91m    no such window: target window already closed?[0m
+[Test worker] INFO  -          * Given I wants to access platform the travelocity
+[Test worker] INFO  -            * User enter
+[Test worker] INFO  -              * user opens the Reservations travelocity page
+Feb 19, 2021 12:46:31 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 11749
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713593.373][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:46:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  -          * When I fill in the data to download the app
+| countryCode | phoneNumber |
+| Colombia +57 | 3000000001 |
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  -            * Then I verify that the text &quot;We’ve sent you a text message with a link to download the app. Please check the phone number you provided, or try again by entering a different phone number.&quot; is as expected
+[Test worker] INFO  - ?[33m      -&gt; STEP IGNORED?[0m
+[Test worker] ERROR  - ?[91m
+___ ____ ____ ___    ____ ____ ____ ____ ____ 
+ |  |___ [__   |     |___ |__/ |__/ |  | |__/ 
+ |  |___ ___]  |     |___ |  \ |  \ |__| |  \ 
+---------------------------------------------
+Send text message with phone number already used
+-----------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: When I fill in the data to download the app | countryCode | phoneNumber | | Colombia +57 | 3000000001 |?[0m
+[Test worker] ERROR  - ?[91m    no such window: target window already closed?[0m
+[Test worker] INFO  -            * Given I wants to access platform the travelocity
+[Test worker] INFO  -              * User enter
+[Test worker] INFO  -                * user opens the Reservations travelocity page
+Feb 19, 2021 12:46:43 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 19723
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613713605.460][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 19, 2021 12:46:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1613713609.382][SEVERE]: Unable to receive message from renderer
+[Test worker] INFO  -            * When I press button to get the app
+[Test worker] INFO  -              * User press button
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  - ?[91mSTEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}?[0m
+[Test worker] INFO  -                * Then I should see the message &quot;Please enter a valid phone number.&quot;
+[Test worker] INFO  - ?[33m      -&gt; STEP IGNORED?[0m
+[Test worker] ERROR  - ?[91m
+___ ____ ____ ___    ____ ____ ____ ____ ____ 
+ |  |___ [__   |     |___ |__/ |__/ |  | |__/ 
+ |  |___ ___]  |     |___ |  \ |  \ |__| |  \ 
+---------------------------------------------
+Send text message without specify phone number
+-----------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: User press button?[0m
+[Test worker] ERROR  - ?[91m    no such window: target window already closed?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Feb 19, 2021 12:46:51 AM</p>
+</div>
+</div>
+</body>
+</html>

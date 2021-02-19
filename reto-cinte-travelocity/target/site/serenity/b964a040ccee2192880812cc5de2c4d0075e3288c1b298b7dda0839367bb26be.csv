@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As a user I want to make bookings in travelocity","Search hotel booking in travelocity not exists","ERROR","2021-02-19T00:37:27.434-05:00[America/Bogota]","0.0","15.42"
+"As a user I want to make bookings in travelocity","Reservation date hotel with more 28 days","ERROR","2021-02-19T00:37:43.117-05:00[America/Bogota]","0.0","3.65"
+"As a user I want to make bookings in travelocity","Reservation hotel without specify place","ERROR","2021-02-19T00:37:46.935-05:00[America/Bogota]","0.0","3.36"
+"As a user I want to make bookings in travelocity","Send text message for download App success","ERROR","2021-02-19T00:37:50.512-05:00[America/Bogota]","0.0","3.02"
+"As a user I want to make bookings in travelocity","Send text message with phone number already used","ERROR","2021-02-19T00:37:53.715-05:00[America/Bogota]","0.0","3.01"
+"As a user I want to make bookings in travelocity","Send text message without specify phone number","ERROR","2021-02-19T00:37:56.894-05:00[America/Bogota]","0.0","4.35"

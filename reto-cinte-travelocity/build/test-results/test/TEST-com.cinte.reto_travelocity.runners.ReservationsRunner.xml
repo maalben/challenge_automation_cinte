@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cinte.reto_travelocity.runners.ReservationsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="MacBook-Pro-de-Mario.local" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@Regression
+Feature: As a user I want to make bookings in travelocity
+
+  @Regression @BookingsHotelSuccessful
+  Scenario: Successful hotel booking in travelocity           # src/test/resources/features/reservations.feature:7
+
+  @Regression @BookingsHotelNoExists
+  Scenario: Search hotel booking in travelocity not exists       # src/test/resources/features/reservations.feature:16
+
+  @Regression @BookingsHotelWithReservationDateMore28days
+  Scenario: Reservation date hotel with more 28 days                                            # src/test/resources/features/reservations.feature:25
+
+  @Regression @BookingsHotelWithoutToSpecifyPlace
+  Scenario: Reservation hotel without specify place                                                  # src/test/resources/features/reservations.feature:34
+
+  @Regression @SendTextMessageDownloadApp
+  Scenario: Send text message for download App success                                                     # src/test/resources/features/reservations.feature:43
+
+  @Regression @SendTextMessageDownloadAppWithAlreadyUsedPhoneNumber
+  Scenario: Send text message with phone number already used                                                                                                                                                   # src/test/resources/features/reservations.feature:52
+
+  @Regression @SendTextMessageWithoutSpecifyPhoneNumber
+  Scenario: Send text message without specify phone number             # src/test/resources/features/reservations.feature:61
+
+Failed scenarios:
+src/test/resources/features/reservations.feature:34 # Reservation hotel without specify place
+src/test/resources/features/reservations.feature:43 # Send text message for download App success
+src/test/resources/features/reservations.feature:52 # Send text message with phone number already used
+src/test/resources/features/reservations.feature:61 # Send text message without specify phone number
+
+7 Scenarios (4 failed, 3 passed)
+21 Steps (4 failed, 4 skipped, 13 passed)
+3m42.190s
+
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs$accessor$3aNwpYoT(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$GRHAfrEW.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.tasks.CompleteDataReservationHotelWithoutToSpecifyPlace.performAs(CompleteDataReservationHotelWithoutToSpecifyPlace.java:27)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iMakeTheHotelReservationOnThePageWithoutSpecifyPlace(ReservationsDefinitions.java:73)
+	at ✽.I make the hotel reservation on the page without specify place(src/test/resources/features/reservations.feature:36)
+
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:45)
+
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+	at ✽.I fill in the data to download the app(src/test/resources/features/reservations.feature:54)
+
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1197)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToTarget.performAs(ScrollToTarget.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:173)
+	at com.cinte.reto_travelocity.tasks.PressButton.performAs(PressButton.java:13)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs$accessor$wVV2HgBp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at com.cinte.reto_travelocity.tasks.PressButton$ByteBuddy$CqHhVmGd.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iPressButtonToGetTheApp(ReservationsDefinitions.java:96)
+	at ✽.I press button to get the app(src/test/resources/features/reservations.feature:63)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at https://www.serenitydojo.net                           
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO  - Test Suite Started: As a user I want to make bookings in travelocity
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Successful hotel booking in travelocity(as-a-user-i-want-to-make-bookings-in-travelocity;successful-hotel-booking-in-travelocity)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Search hotel booking in travelocity not exists(as-a-user-i-want-to-make-bookings-in-travelocity;search-hotel-booking-in-travelocity-not-exists)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Reservation date hotel with more 28 days(as-a-user-i-want-to-make-bookings-in-travelocity;reservation-date-hotel-with-more-28-days)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Reservation hotel without specify place(as-a-user-i-want-to-make-bookings-in-travelocity;reservation-hotel-without-specify-place)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Send text message for download App success(as-a-user-i-want-to-make-bookings-in-travelocity;send-text-message-for-download-app-success)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Send text message with phone number already used(as-a-user-i-want-to-make-bookings-in-travelocity;send-text-message-with-phone-number-already-used)
+-------------------------------------------------------
+[Test worker] INFO  - 
+___ ____ ____ ___    ____ ___ ____ ____ ___ ____ ___  
+ |  |___ [__   |     [__   |  |__| |__/  |  |___ |  \ 
+ |  |___ ___]  |     ___]  |  |  | |  \  |  |___ |__/ 
+----------------------------------------------------
+Send text message without specify phone number(as-a-user-i-want-to-make-bookings-in-travelocity;send-text-message-without-specify-phone-number)
+-------------------------------------------------------
+]]></system-err>
+</testsuite>
