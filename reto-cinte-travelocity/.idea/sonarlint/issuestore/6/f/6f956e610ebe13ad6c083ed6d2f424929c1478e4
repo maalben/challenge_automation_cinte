@@ -1,0 +1,8 @@
+
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÓÊ68±’÷ú.
+r	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áç–¿ùÿÿÿÿ8‰¯÷ú.
+”
+java:S1128	"rRemove this unused import 'com.cinte.reto_travelocity.ui.ReservationsTravelocityPage.BUTTON_PLUS_ADULT_TRAVELERS'.(£ô†îùÿÿÿÿ8†»üÿú.
+r	java:S116"VRename this field "label_value" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“å¤Á8±’÷ú.
+
+java:S1128"sRemove this unused import 'com.cinte.reto_travelocity.ui.ReservationsTravelocityPage.BUTTON_MINUS_ADULT_TRAVELERS'.(ÁÃó‰8áüÿú.

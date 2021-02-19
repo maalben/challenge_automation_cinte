@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="4" failures="0" name="As a user I want to make bookings in travelocity" skipped="0" tests="7" time="219.97" timestamp="2021-02-19 12:43:07"><testcase name="Successful hotel booking in travelocity"/><testcase name="Search hotel booking in travelocity not exists"/><testcase name="Reservation date hotel with more 28 days"/><testcase name="Reservation hotel without specify place"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.182)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b5ddf3104c8d3477c0d86590d32227de&#10;*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b5ddf3104c8d3477c0d86590d32227de
+*** Element info: {Using=xpath, value=//a[@aria-controls='wizard-hotel-pwa-v2']}
+com.cinte.reto_travelocity.tasks.CompleteDataReservationHotelWithoutToSpecifyPlace.performAs(CompleteDataReservationHotelWithoutToSpecifyPlace.java:27)
+com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iMakeTheHotelReservationOnThePageWithoutSpecifyPlace(ReservationsDefinitions.java:73)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase><testcase name="Send text message for download App success"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.182)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 53db208a55e017c088b8abee9ffaa8cb&#10;*** Element info: {Using=id, value=countryCode}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 53db208a55e017c088b8abee9ffaa8cb
+*** Element info: {Using=id, value=countryCode}
+com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase><testcase name="Send text message with phone number already used"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.182)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: f1433bec41a5e751c134dc9687fba300&#10;*** Element info: {Using=id, value=countryCode}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f1433bec41a5e751c134dc9687fba300
+*** Element info: {Using=id, value=countryCode}
+com.cinte.reto_travelocity.tasks.CompleteDataForDownload.performAs(CompleteDataForDownload.java:26)
+com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iFillInTheDataToDownloadTheApp(ReservationsDefinitions.java:50)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase><testcase name="Send text message without specify phone number"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=88.0.4324.182)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: d3fcca59a6f8a68e5a01d50666b04c3c&#10;*** Element info: {Using=id, value=countryCode}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=88.0.4324.182)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Mario.local', ip: 'fd14:b968:b7f8:4000:143a:82b3:a389:7a24%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/5m/6r2ptpzd795...}, goog:chromeOptions: {debuggerAddress: localhost:52387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d3fcca59a6f8a68e5a01d50666b04c3c
+*** Element info: {Using=id, value=countryCode}
+com.cinte.reto_travelocity.tasks.PressButton.performAs(PressButton.java:13)
+com.cinte.reto_travelocity.stepdefinitions.ReservationsDefinitions.iPressButtonToGetTheApp(ReservationsDefinitions.java:96)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase></testsuite>
