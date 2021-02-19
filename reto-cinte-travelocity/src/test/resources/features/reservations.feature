@@ -63,3 +63,51 @@ Scenario: Send text message without specify phone number
   When I press button to get the app
   Then I should see the message "Please enter a valid phone number."
 
+
+#@manual-result:failed
+  @FirstStageManual
+  @Manual
+  @manual-result:passed
+  Scenario: Search flights successfully
+    Given Enter the page https://www.travelocity.com
+    When Click on the Flights option
+    And Click on Roundtrip
+    And Click on the Leaving from field
+    And Write Medellín
+    And Click on the Medellín option (MDE - Jose Maria Cordova Intl)
+    And Click on the Going to field
+    And Write Bogotá
+    And Click on the Bogota option (BOG - El Dorado Intl.)
+    And Click on the Departing field
+    And Click on the 1st of March
+    And Click on the Done button
+    And Click on the Returning field
+    And Click on the 30th of March
+    And Click on the Done button
+    And Click on the Search button
+    Then I should see a list of flight schedules taking into account the selected origin and destination.
+    And I should see a list of flight costs taking into account the selected origin and destination.
+    And I should see a list of travel time taking into account the origin and destination.
+    And I should see a list of available airlines taking into account the origin and destination.
+
+  @SecondStageManual
+  @Manual
+  @manual-result:passed
+  Scenario: Search for flights without selecting origin or destination
+    Given Enter the page https://www.travelocity.com
+    When Click on the Flights option
+    And Click on Roundtrip
+    And Click on the Search button
+    Then I should see the error message Please select an origin in red below the Leaving from text field.
+    And I should see a red Please select a destination error message below the Going to text field
+
+  @ThirdStageManual
+  @Manual
+  @manual-result:passed
+  Scenario: Search for flights without selecting origin or destination
+    Given Enter the page https://www.travelocity.com
+    When Click on the Flights option
+    And Click on Roundtrip
+    And Click on the Search button
+    Then I should see the error message Please select an origin in red below the Leaving from text field.
+    And I should see a red Please select a destination error message below the Going to text field
