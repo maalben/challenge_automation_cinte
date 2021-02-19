@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As a user I want to make bookings in travelocity","Send text message for download App success","ERROR","2021-02-19T00:37:50.512-05:00[America/Bogota]","0.0","3.02"
+"As a user I want to make bookings in travelocity","Send text message for download App success","FAILURE","2021-02-19T10:34:14.645-05:00[America/Bogota]","0.0","29.13"
