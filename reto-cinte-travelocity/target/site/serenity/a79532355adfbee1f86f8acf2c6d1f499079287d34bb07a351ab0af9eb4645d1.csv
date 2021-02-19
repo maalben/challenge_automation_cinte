@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As a user I want to make bookings in travelocity","Reservation hotel without specify place","ERROR","2021-02-19T00:37:46.935-05:00[America/Bogota]","0.0","3.36"
+"As a user I want to make bookings in travelocity","Reservation hotel without specify place","SUCCESS","2021-02-19T10:34:01.022-05:00[America/Bogota]","0.0","13.35"
